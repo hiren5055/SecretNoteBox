@@ -70,7 +70,7 @@ class DBManager {
     }
     
     
-    //MARK: Delete PicPin
+    //MARK: Delete Note
     
     func DeleteSimpleNote(note: Notes) -> String{
         
@@ -89,6 +89,28 @@ class DBManager {
         
     }
     
+    //MARK: Get Note By Scanner
+    
+    func GetNoteById(id: String, completion: @escaping (Notes?) -> Void) {
+        
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "SecretNoteBox")
+        
+        request.predicate = NSPredicate(format:"id = %@", "\(id)")
+        
+        do {
+            
+            let results = try context.fetch(request)
+            
+            completion(results.first as? Notes)
+            
+        } catch let error as NSError {
+            
+            completion(nil)
+            print(error.localizedDescription)
+            
+        }
+        
+    }
     
     
     func samplecode(id: UUID, completion: @escaping (String) -> Void) {

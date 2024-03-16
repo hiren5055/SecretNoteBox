@@ -8,22 +8,97 @@
 import UIKit
 
 class ExportQrVC: UIViewController {
-
+    
+    @IBOutlet weak var tbl: UITableView!
+    
+    var arrNotes: [Notes] = []{
+        didSet{
+            tbl.reloadData()
+        }
+    }
+    
+    
+    //MARK: did load
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tbl.delegate = self
+        tbl.dataSource = self
+        
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        
+        if #available(iOS 13.0, *) {
+            arrNotes = DBManager().GetSimpleNotes()
+        }else{
+            ShowAlert(title: "Not Supported OS Version.", desc: "Update OS.")
+        }
+        
     }
-    */
+    
+    @IBAction func btnBack(_ sender: Any) {
+        
+        navigationController?.popViewController(animated: true)
+        
+    }
+    
+}
 
+extension ExportQrVC: UITableViewDelegate, UITableViewDataSource{
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        arrNotes.isEmpty ? 1 : arrNotes.count
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if arrNotes.isEmpty{
+            return tbl.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        }
+        
+        let cell = tbl.dequeueReusableCell(withIdentifier: "NotesCell")as! NotesCell
+        
+        cell.lblTitle.text = arrNotes[indexPath.item].title
+        cell.lblDesc.text = arrNotes[indexPath.item].desc
+        
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if arrNotes.isEmpty{
+            
+            let vc = storyboard?.instantiateViewController(withIdentifier: "AddNoteVC")as! AddNoteVC
+            
+            navigationController?.pushViewController(vc, animated: true)
+            
+        }else{
+            
+        }
+        
+    }
+    
+   
+    //MARK: Swipe Action
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let actDel = UIContextualAction(style: .normal, title: "DELETE") { _, vie, _ in
+            
+            vie.backgroundColor = .red
+            
+        }
+        
+        let context = UISwipeActionsConfiguration(actions: [actDel])
+
+        return context
+    }
+    
+    
 }

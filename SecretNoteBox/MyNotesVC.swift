@@ -96,11 +96,10 @@ extension MyNotesVC: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
-        let actDel = UIContextualAction(style: .normal, title: "DELETE") { act, vie, closer in
+        let actDel = UIContextualAction(style: .normal, title: "DELETE") { _, vie, _ in
             
             vie.backgroundColor = .red
             
-            closer(false)
         }
         
         let context = UISwipeActionsConfiguration(actions: [actDel])

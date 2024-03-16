@@ -23,6 +23,7 @@
 		189223382BA1AF8B00FCBEF2 /* Gif + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189223372BA1AF8B00FCBEF2 /* Gif + Ext.swift */; };
 		1892233C2BA1B33A00FCBEF2 /* SecretNoteBox.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1892233B2BA1B33A00FCBEF2 /* SecretNoteBox.gif */; };
 		1892233E2BA1B40C00FCBEF2 /* MyNotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892233D2BA1B40C00FCBEF2 /* MyNotesVC.swift */; };
+		902C45122BA571820027071C /* ExportQrVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902C45112BA571820027071C /* ExportQrVC.swift */; };
 		90526D052BA461900012A496 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90526D042BA461900012A496 /* ScannerVC.swift */; };
 		905C48AA2BA41A9A002B2886 /* ShareNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905C48A92BA41A9A002B2886 /* ShareNoteVC.swift */; };
 		9077B0192BA2B9660028411A /* AddNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9077B0182BA2B9660028411A /* AddNoteVC.swift */; };
@@ -51,6 +52,7 @@
 		189223372BA1AF8B00FCBEF2 /* Gif + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gif + Ext.swift"; sourceTree = "<group>"; };
 		1892233B2BA1B33A00FCBEF2 /* SecretNoteBox.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SecretNoteBox.gif; sourceTree = "<group>"; };
 		1892233D2BA1B40C00FCBEF2 /* MyNotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotesVC.swift; sourceTree = "<group>"; };
+		902C45112BA571820027071C /* ExportQrVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportQrVC.swift; sourceTree = "<group>"; };
 		90526D042BA461900012A496 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 		905C48A92BA41A9A002B2886 /* ShareNoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareNoteVC.swift; sourceTree = "<group>"; };
 		9077B0182BA2B9660028411A /* AddNoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteVC.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				90D255ED2BA318E400BDF039 /* NoteDescVC.swift */,
 				905C48A92BA41A9A002B2886 /* ShareNoteVC.swift */,
 				90526D042BA461900012A496 /* ScannerVC.swift */,
+				902C45112BA571820027071C /* ExportQrVC.swift */,
 				189223312BA1A9B600FCBEF2 /* Shadow + Ext.swift */,
 				181588F22BA1BF7700C523DE /* VC + Alert.swift */,
 				9081D7AA2BA41ED5005F1E0E /* View + Img.swift */,
@@ -194,6 +197,7 @@
 				9077B0192BA2B9660028411A /* AddNoteVC.swift in Sources */,
 				189223382BA1AF8B00FCBEF2 /* Gif + Ext.swift in Sources */,
 				1892231B2BA1A35900FCBEF2 /* ViewController.swift in Sources */,
+				902C45122BA571820027071C /* ExportQrVC.swift in Sources */,
 				90D255EE2BA318E400BDF039 /* NoteDescVC.swift in Sources */,
 				189223342BA1AEBC00FCBEF2 /* HomeVC.swift in Sources */,
 				905C48AA2BA41A9A002B2886 /* ShareNoteVC.swift in Sources */,

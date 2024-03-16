@@ -28,13 +28,26 @@ class ScannerVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate, UINav
             guard let uId else{
                 return
             }
-            print(uId)
+            if #available(iOS 13.0, *) {
+                DBManager().GetNoteById(id: uId) { note in
+                    guard let note else{
+                        self.showAlert(title: "This QR is Private Try To Scan Your Note QR.", message: "Try Again.")
+                        return
+                    }
+                    
+                    let vc =  self.storyboard?.instantiateViewController(withIdentifier: "NoteDescVC")as! NoteDescVC
+                    vc.note = note
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
+            } else {
+                showAlert(title: "Device OS version is below supported version", message: "")
+            }
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        setupCamera()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
