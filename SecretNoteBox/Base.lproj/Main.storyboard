@@ -2371,6 +2371,25 @@
                                                         </hierarchicalColors>
                                                     </imageReference>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btnBack:" destination="4qk-SY-QJf" eventType="touchUpInside" id="VqU-BS-UI6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4o-jX-MBj">
+                                                <rect key="frame" x="337" y="45.000000000000007" width="40" height="38.666666666666664"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="6cU-M6-xua"/>
+                                                    <constraint firstAttribute="height" constant="40" id="aeS-lz-wNy"/>
+                                                </constraints>
+                                                <color key="tintColor" name="shd"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <imageReference key="backgroundImage" image="arrow.clockwise.circle.fill" catalog="system" symbolScale="default" renderingMode="original"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnReload:" destination="4qk-SY-QJf" eventType="touchUpInside" id="3IZ-tK-xrZ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" name="cell"/>
@@ -2378,6 +2397,8 @@
                                             <constraint firstAttribute="height" constant="100" id="Izb-xh-8bc"/>
                                             <constraint firstAttribute="bottom" secondItem="iEu-AF-zos" secondAttribute="bottom" constant="16" id="Kxs-i1-GGt"/>
                                             <constraint firstItem="iEu-AF-zos" firstAttribute="leading" secondItem="Sge-X9-fRf" secondAttribute="leading" constant="16" id="TbU-lT-2Vl"/>
+                                            <constraint firstAttribute="trailing" secondItem="q4o-jX-MBj" secondAttribute="trailing" constant="16" id="dRR-oJ-Tv9"/>
+                                            <constraint firstAttribute="bottom" secondItem="q4o-jX-MBj" secondAttribute="bottom" constant="16" id="rFl-06-RmX"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tKZ-UL-HLP">
@@ -2440,17 +2461,11 @@ Camera.</string>
                                                                 <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="60"/>
                                                                 <color key="backgroundColor" name="cell"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                                <color key="tintColor" name="lbl1"/>
+                                                                <color key="tintColor" name="shd"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title=" Set Image">
-                                                                    <color key="titleColor" name="lbl1"/>
-                                                                    <imageReference key="image" image="square.and.arrow.up" catalog="system" symbolScale="large" renderingMode="hierarchical-single">
-                                                                        <hierarchicalColors>
-                                                                            <color name="lbl1"/>
-                                                                            <color systemColor="secondaryLabelColor"/>
-                                                                            <color systemColor="tertiaryLabelColor"/>
-                                                                        </hierarchicalColors>
-                                                                    </imageReference>
+                                                                    <color key="titleColor" name="shd"/>
+                                                                    <imageReference key="image" image="photo.circle.fill" catalog="system" symbolScale="large" renderingMode="original"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -2474,7 +2489,7 @@ Camera.</string>
                                                                 <color key="tintColor" name="lbl1"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="SCAN">
-                                                                    <color key="titleColor" name="lbl1"/>
+                                                                    <color key="titleColor" name="shd"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -2497,7 +2512,7 @@ Camera.</string>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                                <color key="value" systemColor="systemOrangeColor"/>
+                                                                <color key="value" systemColor="systemYellowColor"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
                                                                 <real key="value" value="1"/>
@@ -2637,16 +2652,67 @@ Camera.</string>
                                                 <rect key="frame" x="16" y="16" width="361" height="720"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="214" id="xfF-lP-HRv">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QrNotesCell" rowHeight="214" id="RQO-gS-HAx" customClass="QrNotesCell" customModule="SecretNoteBox" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="50" width="361" height="214"/>
                                                         <autoresizingMask key="autoresizingMask"/>
-                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xfF-lP-HRv" id="Sqk-HW-z1d">
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RQO-gS-HAx" id="XcR-7v-Tw7">
                                                             <rect key="frame" x="0.0" y="0.0" width="361" height="214"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XQm-D4-G8P">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXx-mG-9vh">
                                                                     <rect key="frame" x="0.0" y="0.0" width="361" height="206"/>
+                                                                    <subviews>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="omT-T8-g9c">
+                                                                            <rect key="frame" x="8" y="8" width="345" height="190"/>
+                                                                            <subviews>
+                                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nTb-TS-sIq">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="168.66666666666666" height="190"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="width" secondItem="nTb-TS-sIq" secondAttribute="height" id="XTV-av-DC4"/>
+                                                                                    </constraints>
+                                                                                    <userDefinedRuntimeAttributes>
+                                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                            <real key="value" value="8"/>
+                                                                                        </userDefinedRuntimeAttribute>
+                                                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                            <real key="value" value="0.29999999999999999"/>
+                                                                                        </userDefinedRuntimeAttribute>
+                                                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                            <color key="value" name="shd"/>
+                                                                                        </userDefinedRuntimeAttribute>
+                                                                                    </userDefinedRuntimeAttributes>
+                                                                                </imageView>
+                                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CWG-lE-xoJ">
+                                                                                    <rect key="frame" x="176.66666666666663" y="0.0" width="168.33333333333337" height="190"/>
+                                                                                    <subviews>
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbe-cf-GNE">
+                                                                                            <rect key="frame" x="0.0" y="0.0" width="168.33333333333334" height="91"/>
+                                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                                                            <color key="textColor" name="lbl1"/>
+                                                                                            <nil key="highlightedColor"/>
+                                                                                            <color key="shadowColor" name="shd"/>
+                                                                                            <size key="shadowOffset" width="0.5" height="0.5"/>
+                                                                                        </label>
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGd-wP-Myl">
+                                                                                            <rect key="frame" x="0.0" y="99" width="168.33333333333334" height="91"/>
+                                                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                                            <color key="textColor" name="lbl1"/>
+                                                                                            <nil key="highlightedColor"/>
+                                                                                            <color key="shadowColor" name="shd"/>
+                                                                                            <size key="shadowOffset" width="0.29999999999999999" height="0.29999999999999999"/>
+                                                                                        </label>
+                                                                                    </subviews>
+                                                                                </stackView>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
                                                                     <color key="backgroundColor" name="cell"/>
+                                                                    <constraints>
+                                                                        <constraint firstItem="omT-T8-g9c" firstAttribute="leading" secondItem="VXx-mG-9vh" secondAttribute="leading" constant="8" id="AMb-lk-UeF"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="omT-T8-g9c" secondAttribute="trailing" constant="8" id="isG-c2-knr"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="omT-T8-g9c" secondAttribute="bottom" constant="8" id="o7v-Ws-ga2"/>
+                                                                        <constraint firstItem="omT-T8-g9c" firstAttribute="top" secondItem="VXx-mG-9vh" secondAttribute="top" constant="8" id="t83-Gx-ozL"/>
+                                                                    </constraints>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <real key="value" value="8"/>
@@ -2661,13 +2727,18 @@ Camera.</string>
                                                                 </view>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstAttribute="trailing" secondItem="XQm-D4-G8P" secondAttribute="trailing" id="8tn-nm-oSz"/>
-                                                                <constraint firstItem="XQm-D4-G8P" firstAttribute="top" secondItem="Sqk-HW-z1d" secondAttribute="top" id="XiW-QU-QDA"/>
-                                                                <constraint firstItem="XQm-D4-G8P" firstAttribute="leading" secondItem="Sqk-HW-z1d" secondAttribute="leading" id="xUV-1q-Mv6"/>
-                                                                <constraint firstAttribute="bottom" secondItem="XQm-D4-G8P" secondAttribute="bottom" constant="8" id="yIH-x1-KSU"/>
+                                                                <constraint firstItem="VXx-mG-9vh" firstAttribute="top" secondItem="XcR-7v-Tw7" secondAttribute="top" id="6T8-sR-rNX"/>
+                                                                <constraint firstAttribute="bottom" secondItem="VXx-mG-9vh" secondAttribute="bottom" constant="8" id="Syx-Th-o4D"/>
+                                                                <constraint firstItem="VXx-mG-9vh" firstAttribute="leading" secondItem="XcR-7v-Tw7" secondAttribute="leading" id="ZpJ-NR-WpW"/>
+                                                                <constraint firstAttribute="trailing" secondItem="VXx-mG-9vh" secondAttribute="trailing" id="oRx-YZ-1bF"/>
                                                             </constraints>
                                                         </tableViewCellContentView>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <connections>
+                                                            <outlet property="img" destination="nTb-TS-sIq" id="hhn-zO-kNO"/>
+                                                            <outlet property="lblDesc" destination="YGd-wP-Myl" id="4PW-4z-yRf"/>
+                                                            <outlet property="lblTitle" destination="pbe-cf-GNE" id="IvW-wu-9sm"/>
+                                                        </connections>
                                                     </tableViewCell>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="214" id="EEX-H1-X6b">
                                                         <rect key="frame" x="0.0" y="264" width="361" height="214"/>
@@ -2781,6 +2852,7 @@ Camera.</string>
         <image name="N 2" width="512" height="512"/>
         <image name="Q 1" width="512" height="512"/>
         <image name="SecretNoteBox.gif" width="1902" height="123"/>
+        <image name="arrow.clockwise.circle.fill" catalog="system" width="128" height="123"/>
         <image name="arrowshape.turn.up.left.circle.fill" catalog="system" width="128" height="123"/>
         <image name="arrowshape.turn.up.right.circle.fill" catalog="system" width="128" height="123"/>
         <image name="camera.circle.fill" catalog="system" width="128" height="123"/>
@@ -2793,9 +2865,9 @@ Camera.</string>
         <image name="pause.circle.fill" catalog="system" width="128" height="123"/>
         <image name="pencil.circle.fill" catalog="system" width="128" height="123"/>
         <image name="photo.artframe.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="photo.circle.fill" catalog="system" width="128" height="123"/>
         <image name="play.circle.fill" catalog="system" width="128" height="123"/>
         <image name="plus.app.fill" catalog="system" width="128" height="114"/>
-        <image name="square.and.arrow.up" catalog="system" width="108" height="128"/>
         <image name="trash.circle.fill" catalog="system" width="128" height="123"/>
         <image name="waveform.circle.fill" catalog="system" width="128" height="123"/>
         <image name="x.circle.fill" catalog="system" width="128" height="123"/>
@@ -2823,11 +2895,11 @@ Camera.</string>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>

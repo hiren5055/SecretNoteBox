@@ -24,23 +24,43 @@ class ScannerVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate, UINav
     }
     
     var uId: String? {
+        
         didSet{
+            
             guard let uId else{
                 return
             }
+            
+            if uId == "demo"{
+                
+                let vc =  self.storyboard?.instantiateViewController(withIdentifier: "NoteDescVC")as! NoteDescVC
+                self.navigationController?.pushViewController(vc, animated: true)
+                
+                return
+                
+            }
+            
             if #available(iOS 13.0, *) {
+                
                 DBManager().GetNoteById(id: uId) { note in
                     guard let note else{
+                        
                         self.showAlert(title: "This QR is Private Try To Scan Your Note QR.", message: "Try Again.")
+                        
                         return
+                        
                     }
                     
                     let vc =  self.storyboard?.instantiateViewController(withIdentifier: "NoteDescVC")as! NoteDescVC
                     vc.note = note
                     self.navigationController?.pushViewController(vc, animated: true)
+                    
                 }
+                
             } else {
+                
                 showAlert(title: "Device OS version is below supported version", message: "")
+                
             }
         }
     }
@@ -179,4 +199,19 @@ class ScannerVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate, UINav
         
     }
     
+    
+    @IBAction func btnBack(_ sender: Any) {
+        
+        navigationController?.popViewController(animated: true)
+        
+    }
+    
+    #warning("Implement Demo QR For Approvel")
+    
+    
+    
+    
+    
 }
+
+

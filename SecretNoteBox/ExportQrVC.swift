@@ -22,10 +22,9 @@ class ExportQrVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tbl.delegate = self
         tbl.dataSource = self
-        
         
     }
     
@@ -61,10 +60,12 @@ extension ExportQrVC: UITableViewDelegate, UITableViewDataSource{
             return tbl.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         }
         
-        let cell = tbl.dequeueReusableCell(withIdentifier: "NotesCell")as! NotesCell
+        let cell = tbl.dequeueReusableCell(withIdentifier: "QrNotesCell")as! QrNotesCell
         
         cell.lblTitle.text = arrNotes[indexPath.item].title
         cell.lblDesc.text = arrNotes[indexPath.item].desc
+        
+        cell.img.image = QrFromStr(from: arrNotes[indexPath.item].id?.uuidString ?? "hiren")
         
         return cell
         
@@ -80,6 +81,18 @@ extension ExportQrVC: UITableViewDelegate, UITableViewDataSource{
             
         }else{
             
+            guard let id = arrNotes[indexPath.row].id else{
+                self.ShowAlert(title: "QR generating Fail.", desc: "")
+                return
+            }
+            
+            guard let img = QrFromStr(from: id.uuidString) else{
+                self.ShowAlert(title: "QR generating Fail.", desc: "")
+                return
+            }
+            
+            let activityViewController = UIActivityViewController(activityItems: [img], applicationActivities: nil)
+            present(activityViewController, animated: true, completion: nil)
         }
         
     }
@@ -96,9 +109,43 @@ extension ExportQrVC: UITableViewDelegate, UITableViewDataSource{
         }
         
         let context = UISwipeActionsConfiguration(actions: [actDel])
-
+        
         return context
     }
     
+    
+    //MARK: QR from id
+    
+    func QrFromStr(from string: String) -> UIImage?{
+        let data = string.data(using: String.Encoding.ascii)
+        if let filter = CIFilter(name: "CIQRCodeGenerator") {
+            filter.setValue(data, forKey: "inputMessage")
+            let transform = CGAffineTransform(scaleX: 10, y: 10)
+            if let output = filter.outputImage?.transformed(by: transform) {
+                let qrCodeImage = UIImage(ciImage: output)
+                return qrCodeImage
+            }else{
+                print("QR fail")
+                return nil
+            }
+        }else{
+            print("QR fail")
+            return nil
+        }
+    }
+    
+    
+}
+
+
+//MARK: Note Cell
+
+class QrNotesCell: UITableViewCell{
+    
+    @IBOutlet weak var img: UIImageView!
+    
+    @IBOutlet weak var lblTitle: UILabel!
+    
+    @IBOutlet weak var lblDesc: UILabel!
     
 }

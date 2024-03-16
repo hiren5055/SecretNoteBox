@@ -93,7 +93,7 @@ class DBManager {
     
     func GetNoteById(id: String, completion: @escaping (Notes?) -> Void) {
         
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "SecretNoteBox")
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Notes")
         
         request.predicate = NSPredicate(format:"id = %@", "\(id)")
         
