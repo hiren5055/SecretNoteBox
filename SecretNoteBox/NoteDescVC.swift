@@ -36,6 +36,7 @@ class NoteDescVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         if note?.audio?.isEmpty ?? false{
             
             sldrAudPlay.addTarget(self, action: #selector(sliderValueChanged(_:)), for: .valueChanged)
@@ -46,6 +47,10 @@ class NoteDescVC: UIViewController {
             
             viewPlayer.isHidden = true
             
+        }
+        
+        if note == nil{
+            return
         }
         
         if let iData = note?.img, let i = UIImage(data: iData){
