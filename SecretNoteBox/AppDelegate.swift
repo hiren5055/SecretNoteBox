@@ -7,15 +7,21 @@
 
 import UIKit
 import CoreData
+import IQKeyboardManagerSwift
 
 @available(iOS 13.0, *)
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.keyboardDistanceFromTextField = 10
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        IQKeyboardManager.shared.toolbarTintColor = #colorLiteral(red: 0.97299999, green: 0.9649999738, blue: 0.9570000172, alpha: 1)
+        IQKeyboardManager.shared.toolbarDoneBarButtonItemText = "SET"
+//        IQKeyboardManager.shared.enableAutoToolbar = false
+        
         return true
     }
 

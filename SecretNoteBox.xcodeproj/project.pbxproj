@@ -23,9 +23,15 @@
 		189223382BA1AF8B00FCBEF2 /* Gif + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189223372BA1AF8B00FCBEF2 /* Gif + Ext.swift */; };
 		1892233C2BA1B33A00FCBEF2 /* SecretNoteBox.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1892233B2BA1B33A00FCBEF2 /* SecretNoteBox.gif */; };
 		1892233E2BA1B40C00FCBEF2 /* MyNotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892233D2BA1B40C00FCBEF2 /* MyNotesVC.swift */; };
+		1D363BE75632D71C5F6CB686 /* Pods_SecretNoteBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE20A0B4FA1FD4E622583BDD /* Pods_SecretNoteBox.framework */; };
 		902C45122BA571820027071C /* ExportQrVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902C45112BA571820027071C /* ExportQrVC.swift */; };
 		90526D052BA461900012A496 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90526D042BA461900012A496 /* ScannerVC.swift */; };
 		905C48AA2BA41A9A002B2886 /* ShareNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905C48A92BA41A9A002B2886 /* ShareNoteVC.swift */; };
+		9071C4C22BA5AD0F00D501E1 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9071C4C12BA5AD0F00D501E1 /* SideMenuVC.swift */; };
+		9071C4C42BA5BC4100D501E1 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9071C4C32BA5BC4100D501E1 /* FeedVC.swift */; };
+		9071C4C62BA5BC8400D501E1 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9071C4C52BA5BC8400D501E1 /* AboutVC.swift */; };
+		9071C4C82BA5BC8E00D501E1 /* TermsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9071C4C72BA5BC8E00D501E1 /* TermsVC.swift */; };
+		9071C4CA2BA5BC9700D501E1 /* PrivacyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9071C4C92BA5BC9700D501E1 /* PrivacyVC.swift */; };
 		9077B0192BA2B9660028411A /* AddNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9077B0182BA2B9660028411A /* AddNoteVC.swift */; };
 		9081D7AB2BA41ED5005F1E0E /* View + Img.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081D7AA2BA41ED5005F1E0E /* View + Img.swift */; };
 		90D255EC2BA30CF200BDF039 /* f1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 90D255EB2BA30CF200BDF039 /* f1.gif */; };
@@ -52,14 +58,22 @@
 		189223372BA1AF8B00FCBEF2 /* Gif + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gif + Ext.swift"; sourceTree = "<group>"; };
 		1892233B2BA1B33A00FCBEF2 /* SecretNoteBox.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SecretNoteBox.gif; sourceTree = "<group>"; };
 		1892233D2BA1B40C00FCBEF2 /* MyNotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotesVC.swift; sourceTree = "<group>"; };
+		2F89362B5BAF1C9279653C59 /* Pods-SecretNoteBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretNoteBox.release.xcconfig"; path = "Target Support Files/Pods-SecretNoteBox/Pods-SecretNoteBox.release.xcconfig"; sourceTree = "<group>"; };
+		46901396A65D41CC94E2E6ED /* Pods-SecretNoteBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretNoteBox.debug.xcconfig"; path = "Target Support Files/Pods-SecretNoteBox/Pods-SecretNoteBox.debug.xcconfig"; sourceTree = "<group>"; };
 		902C45112BA571820027071C /* ExportQrVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportQrVC.swift; sourceTree = "<group>"; };
 		90526D042BA461900012A496 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 		905C48A92BA41A9A002B2886 /* ShareNoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareNoteVC.swift; sourceTree = "<group>"; };
+		9071C4C12BA5AD0F00D501E1 /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
+		9071C4C32BA5BC4100D501E1 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		9071C4C52BA5BC8400D501E1 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		9071C4C72BA5BC8E00D501E1 /* TermsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsVC.swift; sourceTree = "<group>"; };
+		9071C4C92BA5BC9700D501E1 /* PrivacyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyVC.swift; sourceTree = "<group>"; };
 		9077B0182BA2B9660028411A /* AddNoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteVC.swift; sourceTree = "<group>"; };
 		9081D7AA2BA41ED5005F1E0E /* View + Img.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Img.swift"; sourceTree = "<group>"; };
 		90D255EB2BA30CF200BDF039 /* f1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = f1.gif; sourceTree = "<group>"; };
 		90D255ED2BA318E400BDF039 /* NoteDescVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDescVC.swift; sourceTree = "<group>"; };
 		90EF613A2BA55AE1005A03C7 /* Img + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Img + Ext.swift"; sourceTree = "<group>"; };
+		AE20A0B4FA1FD4E622583BDD /* Pods_SecretNoteBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecretNoteBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D363BE75632D71C5F6CB686 /* Pods_SecretNoteBox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +93,8 @@
 			children = (
 				189223152BA1A35900FCBEF2 /* SecretNoteBox */,
 				189223142BA1A35900FCBEF2 /* Products */,
+				493DBB55746096BD3D53E8B3 /* Pods */,
+				342264BAC09069F60CDD2A12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +116,17 @@
 				181588F02BA1BC2700C523DE /* DBManager.swift */,
 				1892231A2BA1A35900FCBEF2 /* ViewController.swift */,
 				189223332BA1AEBC00FCBEF2 /* HomeVC.swift */,
+				9071C4C12BA5AD0F00D501E1 /* SideMenuVC.swift */,
 				1892233D2BA1B40C00FCBEF2 /* MyNotesVC.swift */,
 				9077B0182BA2B9660028411A /* AddNoteVC.swift */,
 				90D255ED2BA318E400BDF039 /* NoteDescVC.swift */,
 				905C48A92BA41A9A002B2886 /* ShareNoteVC.swift */,
 				90526D042BA461900012A496 /* ScannerVC.swift */,
 				902C45112BA571820027071C /* ExportQrVC.swift */,
+				9071C4C32BA5BC4100D501E1 /* FeedVC.swift */,
+				9071C4C52BA5BC8400D501E1 /* AboutVC.swift */,
+				9071C4C92BA5BC9700D501E1 /* PrivacyVC.swift */,
+				9071C4C72BA5BC8E00D501E1 /* TermsVC.swift */,
 				189223312BA1A9B600FCBEF2 /* Shadow + Ext.swift */,
 				181588F22BA1BF7700C523DE /* VC + Alert.swift */,
 				9081D7AA2BA41ED5005F1E0E /* View + Img.swift */,
@@ -121,6 +143,23 @@
 			path = SecretNoteBox;
 			sourceTree = "<group>";
 		};
+		342264BAC09069F60CDD2A12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE20A0B4FA1FD4E622583BDD /* Pods_SecretNoteBox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		493DBB55746096BD3D53E8B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46901396A65D41CC94E2E6ED /* Pods-SecretNoteBox.debug.xcconfig */,
+				2F89362B5BAF1C9279653C59 /* Pods-SecretNoteBox.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1892232A2BA1A35B00FCBEF2 /* Build configuration list for PBXNativeTarget "SecretNoteBox" */;
 			buildPhases = (
+				23EAA45C849587CD0C0B9DAA /* [CP] Check Pods Manifest.lock */,
 				1892230F2BA1A35900FCBEF2 /* Sources */,
 				189223102BA1A35900FCBEF2 /* Frameworks */,
 				189223112BA1A35900FCBEF2 /* Resources */,
+				BD2D563725F9857D86715CD0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,11 +230,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23EAA45C849587CD0C0B9DAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SecretNoteBox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD2D563725F9857D86715CD0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SecretNoteBox/Pods-SecretNoteBox-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SecretNoteBox/Pods-SecretNoteBox-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SecretNoteBox/Pods-SecretNoteBox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1892230F2BA1A35900FCBEF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9071C4C82BA5BC8E00D501E1 /* TermsVC.swift in Sources */,
+				9071C4CA2BA5BC9700D501E1 /* PrivacyVC.swift in Sources */,
 				9077B0192BA2B9660028411A /* AddNoteVC.swift in Sources */,
 				189223382BA1AF8B00FCBEF2 /* Gif + Ext.swift in Sources */,
 				1892231B2BA1A35900FCBEF2 /* ViewController.swift in Sources */,
@@ -208,10 +293,13 @@
 				189223302BA1A69000FCBEF2 /* Notes+CoreDataProperties.swift in Sources */,
 				1892233E2BA1B40C00FCBEF2 /* MyNotesVC.swift in Sources */,
 				189223322BA1A9B600FCBEF2 /* Shadow + Ext.swift in Sources */,
+				9071C4C22BA5AD0F00D501E1 /* SideMenuVC.swift in Sources */,
+				9071C4C42BA5BC4100D501E1 /* FeedVC.swift in Sources */,
 				1892232F2BA1A69000FCBEF2 /* Notes+CoreDataClass.swift in Sources */,
 				189223212BA1A35900FCBEF2 /* SecretNoteBox.xcdatamodeld in Sources */,
 				181588F12BA1BC2700C523DE /* DBManager.swift in Sources */,
 				9081D7AB2BA41ED5005F1E0E /* View + Img.swift in Sources */,
+				9071C4C62BA5BC8400D501E1 /* AboutVC.swift in Sources */,
 				181588F32BA1BF7700C523DE /* VC + Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +442,7 @@
 		};
 		1892232B2BA1A35B00FCBEF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46901396A65D41CC94E2E6ED /* Pods-SecretNoteBox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -387,6 +476,7 @@
 		};
 		1892232C2BA1A35B00FCBEF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F89362B5BAF1C9279653C59 /* Pods-SecretNoteBox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

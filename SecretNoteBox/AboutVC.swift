@@ -25,5 +25,11 @@ class AboutVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func btnBack(_ sender: Any) {
+        
+        navigationController?.popViewController(animated: true)
+        
+    }
 
 }

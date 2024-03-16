@@ -37,6 +37,8 @@ class AddNoteVC: UIViewController {
     
     @IBOutlet weak var imgF1: UIImageView!
     
+    @IBOutlet weak var scrl: UIScrollView!
+    
     //image picker
     
     let imagePicker = UIImagePickerController()
@@ -140,6 +142,8 @@ class AddNoteVC: UIViewController {
         
         if sender.isSelected{
             
+//            configRecord()
+            
             recorder.record()
             
         }else{
@@ -183,6 +187,10 @@ class AddNoteVC: UIViewController {
         
     }
     
+    @IBAction func btnGoTop(_ sender: Any) {
+        scrl.setContentOffset(.zero, animated: true)
+
+    }
     
     @IBAction func btnBack(_ sender: Any) {
         

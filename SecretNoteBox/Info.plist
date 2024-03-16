@@ -2,8 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Access your gallery to select images to include in your notes, or save QR codes and images created in SecretNoteBox.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Access your gallery to select images to include in your notes, or save QR codes and images created in SecretNoteBox.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>SecretNoteBox requires camera access to scan QR codes directly from your environment and to add images to your notes.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>mic for record</string>
+	<string>To enrich your notes, SecretNoteBox needs microphone access for recording audio memos.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
