@@ -58,6 +58,9 @@ class NoteDescVC: UIViewController {
             
         }
         
+        lblTitle.text = note?.title
+        lblDesc.text = note?.desc
+        
     }
     
     

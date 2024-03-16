@@ -23,9 +23,13 @@
 		189223382BA1AF8B00FCBEF2 /* Gif + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189223372BA1AF8B00FCBEF2 /* Gif + Ext.swift */; };
 		1892233C2BA1B33A00FCBEF2 /* SecretNoteBox.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1892233B2BA1B33A00FCBEF2 /* SecretNoteBox.gif */; };
 		1892233E2BA1B40C00FCBEF2 /* MyNotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892233D2BA1B40C00FCBEF2 /* MyNotesVC.swift */; };
+		90526D052BA461900012A496 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90526D042BA461900012A496 /* ScannerVC.swift */; };
+		905C48AA2BA41A9A002B2886 /* ShareNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905C48A92BA41A9A002B2886 /* ShareNoteVC.swift */; };
 		9077B0192BA2B9660028411A /* AddNoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9077B0182BA2B9660028411A /* AddNoteVC.swift */; };
+		9081D7AB2BA41ED5005F1E0E /* View + Img.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9081D7AA2BA41ED5005F1E0E /* View + Img.swift */; };
 		90D255EC2BA30CF200BDF039 /* f1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 90D255EB2BA30CF200BDF039 /* f1.gif */; };
 		90D255EE2BA318E400BDF039 /* NoteDescVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D255ED2BA318E400BDF039 /* NoteDescVC.swift */; };
+		90EF613B2BA55AE1005A03C7 /* Img + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EF613A2BA55AE1005A03C7 /* Img + Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,9 +51,13 @@
 		189223372BA1AF8B00FCBEF2 /* Gif + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gif + Ext.swift"; sourceTree = "<group>"; };
 		1892233B2BA1B33A00FCBEF2 /* SecretNoteBox.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SecretNoteBox.gif; sourceTree = "<group>"; };
 		1892233D2BA1B40C00FCBEF2 /* MyNotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotesVC.swift; sourceTree = "<group>"; };
+		90526D042BA461900012A496 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
+		905C48A92BA41A9A002B2886 /* ShareNoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareNoteVC.swift; sourceTree = "<group>"; };
 		9077B0182BA2B9660028411A /* AddNoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteVC.swift; sourceTree = "<group>"; };
+		9081D7AA2BA41ED5005F1E0E /* View + Img.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Img.swift"; sourceTree = "<group>"; };
 		90D255EB2BA30CF200BDF039 /* f1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = f1.gif; sourceTree = "<group>"; };
 		90D255ED2BA318E400BDF039 /* NoteDescVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDescVC.swift; sourceTree = "<group>"; };
+		90EF613A2BA55AE1005A03C7 /* Img + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Img + Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,9 +100,13 @@
 				1892233D2BA1B40C00FCBEF2 /* MyNotesVC.swift */,
 				9077B0182BA2B9660028411A /* AddNoteVC.swift */,
 				90D255ED2BA318E400BDF039 /* NoteDescVC.swift */,
+				905C48A92BA41A9A002B2886 /* ShareNoteVC.swift */,
+				90526D042BA461900012A496 /* ScannerVC.swift */,
 				189223312BA1A9B600FCBEF2 /* Shadow + Ext.swift */,
 				181588F22BA1BF7700C523DE /* VC + Alert.swift */,
+				9081D7AA2BA41ED5005F1E0E /* View + Img.swift */,
 				189223372BA1AF8B00FCBEF2 /* Gif + Ext.swift */,
+				90EF613A2BA55AE1005A03C7 /* Img + Ext.swift */,
 				1892231C2BA1A35900FCBEF2 /* Main.storyboard */,
 				1892233B2BA1B33A00FCBEF2 /* SecretNoteBox.gif */,
 				90D255EB2BA30CF200BDF039 /* f1.gif */,
@@ -184,14 +196,18 @@
 				1892231B2BA1A35900FCBEF2 /* ViewController.swift in Sources */,
 				90D255EE2BA318E400BDF039 /* NoteDescVC.swift in Sources */,
 				189223342BA1AEBC00FCBEF2 /* HomeVC.swift in Sources */,
+				905C48AA2BA41A9A002B2886 /* ShareNoteVC.swift in Sources */,
 				189223172BA1A35900FCBEF2 /* AppDelegate.swift in Sources */,
 				189223192BA1A35900FCBEF2 /* SceneDelegate.swift in Sources */,
+				90526D052BA461900012A496 /* ScannerVC.swift in Sources */,
+				90EF613B2BA55AE1005A03C7 /* Img + Ext.swift in Sources */,
 				189223302BA1A69000FCBEF2 /* Notes+CoreDataProperties.swift in Sources */,
 				1892233E2BA1B40C00FCBEF2 /* MyNotesVC.swift in Sources */,
 				189223322BA1A9B600FCBEF2 /* Shadow + Ext.swift in Sources */,
 				1892232F2BA1A69000FCBEF2 /* Notes+CoreDataClass.swift in Sources */,
 				189223212BA1A35900FCBEF2 /* SecretNoteBox.xcdatamodeld in Sources */,
 				181588F12BA1BC2700C523DE /* DBManager.swift in Sources */,
+				9081D7AB2BA41ED5005F1E0E /* View + Img.swift in Sources */,
 				181588F32BA1BF7700C523DE /* VC + Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
